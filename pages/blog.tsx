@@ -1,9 +1,13 @@
-import React from "react";
+
+import Layout from "../components/layout";
 
 export default function Blog(){
    return (
-    <div>
-        <p>Blog Page</p>
-    </div>
-   )
+    <Layout>
+        <p className="title">Blog Page</p>
+    </Layout>
+        
+   );
+
+  
 }

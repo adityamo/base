@@ -25,7 +25,8 @@
     "plugins": [
         "react"
     ],
-    // "rules": {
-    //     ""
-    // }
+    "rules": {
+        "react/jsx-filename-extension" : [1, {"extension": [".js", ".jsx" , ".tsx"] }],
+        "react/react-in-jsx-scope" : "off"
+    }
 }
