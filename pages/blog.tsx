@@ -2,15 +2,22 @@
 import Layout from "../components/layout";
 import styles from "../styles/Blog.module.css";
 
-
-export default function Blog(props){
+interface Post {
+    id: number;
+    title: string;
+    body: string;
+}
+interface BlogProps{
+    dataBlog: Post[]
+}
+export default function Blog(props: BlogProps){
     const {dataBlog} = props;
    return (
     <Layout pageTitle="Blog">
        {dataBlog.map(blog => {
             return(
                 <div key={blog.id} className={styles.card}>
-                    <p>{blog.title}</p>
+                    <h3>{blog.title}</h3>
                     <p>{blog.body}</p>
                 </div>
 
